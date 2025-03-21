@@ -100,7 +100,7 @@ public class BookFlight extends JFrame implements ActionListener {
         
         flightCodeLabel = new JLabel();
         flightCodeLabel.setBounds(200, 320, 200, 30);
-        flightCodeLabel.setBorder(BorderFactory.createLineBorder(Color.BLACK)); // Optional
+        flightCodeLabel.setBorder(BorderFactory.createLineBorder(Color.BLACK)); 
         add(flightCodeLabel);
 
        
@@ -195,7 +195,7 @@ public class BookFlight extends JFrame implements ActionListener {
                 aadharField.getText() + "', '" + nameValue.getText() + "', '" + nationalityValue.getText() + "', '" + phoneField.getText() + "', '" + 
                 sourceBox.getSelectedItem() + "', '" + destinationBox.getSelectedItem() + "', '" + flightCodeLabel.getText() + "', '" + formattedDate + "')";
 
-        System.out.println("SQL Query: " + query); // Debugging: Print query before execution
+        System.out.println("SQL Query: " + query); 
         conn.s.executeUpdate(query);
         JOptionPane.showMessageDialog(null, "Flight Booked Successfully!");
         setVisible(false);
